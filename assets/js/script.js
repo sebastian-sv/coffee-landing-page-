@@ -12,8 +12,7 @@ window.sr = new ScrollReveal();
 sr.reveal('.grid-item', { 
   interval: 12, 
   reset: true,
-  distance: '100%', 
-  origin: 'bottom',
+  origin:"bottom"
 });
 
 
@@ -36,24 +35,3 @@ for (link of links) {
     headerMenu.classList.remove("active");     
    });
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

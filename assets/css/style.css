@@ -5,7 +5,7 @@
   box-sizing:border-box;
 }
 :root{
-  --bg-body:#101010;
+  --bg-body:#0B0B0B;
   --color-text-body:#FFFFFF;
   --bg-main:#d3ad7f;  
   --bg-dark:#080809;
@@ -183,7 +183,7 @@ section[id]{
   gap:1em;
   background:var(--bg-dark);
   box-shadow:0px 0px 35px -25px rgba(000, 000, 000,0.5);
-  border-radius:7px;
+  border-radius:8px;
 }
 .grid-item
 .card-image img{
@@ -207,10 +207,69 @@ section[id]{
   border-radius:4px;
   color:var(--color-text-body);
 }
-
+.grid-products{
+  display: grid;
+  grid-template-columns:repeat(1,1fr);
+  gap:1em;
+}
+.grid-products .card-product{
+  width:100%;
+  height:auto;
+  padding:2em;
+  background:var(--bg-dark);
+  border-radius:8px;
+  overflow:hidden;
+  display: flex;
+  align-items:center;
+}
+.card-product .card-image img{
+  width:100px;
+  height: 100%;
+  margin-top:-30px;
+}
+.card-body .info-product{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+}
+.info-product h4{
+  font-size:14px;
+  font-weight:500;
+}
+.info-product span{
+  font-size:12px;
+  font-weight:500;
+}
+.card-body .description{
+  text-align: justify;
+  font-size:12px;
+  font-weight:400;
+  color:#c7c7c7;
+  margin:10px 0px;
+}
+.btn-buy{
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+}
+.card-body .btn-buy .btn{
+  width:120px;
+  height:30px;
+  background:none;
+  border:none;
+  outline:none;
+  font-size:12px;
+  font-weight:400;
+  border:1px solid var(--bg-main);
+  border-radius:4px;
+  color:var(--bg-main);
+}
 @media screen and (min-width:800px){
   .grid-items{
     grid-template-columns: repeat(4,1fr);
+  }
+  .grid-products{
+    grid-template-columns: repeat(2,1fr);
   }
   .header-nav .header-menu {
     width:auto;
