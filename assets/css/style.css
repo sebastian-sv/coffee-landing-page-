@@ -63,7 +63,7 @@ section[id]{
   position: fixed;
   top:0;
   left:0;
-  z-index:2;
+  z-index:999;
 }
 .header-page .header-nav{
   height: 100%;
@@ -263,6 +263,60 @@ section[id]{
   border:1px solid var(--bg-main);
   border-radius:4px;
   color:var(--bg-main);
+}
+.section-contac{
+  width:100%;
+  height:200px;
+  background-image:url("../images/image-1.jpg");
+  background-position:center center;
+  background-size: cover;
+  position: relative;
+}
+.bg-shadow{
+  width:100%;
+  height:100%;
+  background: rgba(000, 000, 000,0.5);
+  position: absolute;
+}
+.section-contac .text-content{
+  height: 100%;
+  position: relative ;
+  z-index:2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-form{
+  display: grid;
+  grid-gap:0.8em;
+}
+.box-form .text h3{
+  font-size:1rem;
+  text-transform: uppercase;
+  font-weight:600;
+}
+.box-input{
+  display:flex;
+  align-content: center;
+}
+.box-input input{
+  width:200px;
+  height:35px;
+  padding:0px 8px;
+  font-family: var(--font-family);
+  outline: none;
+  font-size:12px;
+  font-weight:400;
+}
+.box-input .btn-sub{
+  width:80px;
+  height:35px;
+  background:var(--bg-main);
+  border-radius:3px;
+  font-size:12px;
+  font-weight:400;
+  color:var(--color-text-body);
+  border:none;
 }
 @media screen and (min-width:800px){
   .grid-items{
